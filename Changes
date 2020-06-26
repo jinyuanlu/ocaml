@@ -147,6 +147,8 @@ Working version
 
 ### Manual and documentation:
 
+- #9468: HACKING.adoc: using dune to get merlin's support
+  (Thomas Refis, review by Gabriel Scherer)
 
 ### Compiler user-interface and warnings:
 
@@ -169,6 +171,12 @@ Working version
   module type were parsed but ignored. Now they are attached to the
   corresponding core_type.
   (Etienne Millon, review by Thomas Refis)
+
+- #6633, #9673: Add hint when a module is used instead of a module type or
+  when a module type is used instead of a module or when a class type is used
+  instead of a class.
+  (Xavier Van de Woestyne, report by whitequark, review by Florian Angeletti
+  and Gabriel Scherer)
 
 ### Internal/compiler-libs changes:
 
@@ -687,6 +695,9 @@ OCaml 4.11
   even if they are at tail position.
   (Jacques-Henri Jourdan, review by Gabriel Scherer)
 
+- #9244: Fix some missing usage warnings
+  (Leo White, review by Florian Angeletti)
+
 - #9274, avoid reading cmi file while printing types
   (Florian Angeletti, review by Gabriel Scherer)
 
@@ -713,6 +724,9 @@ OCaml 4.11
 
 - #9375, #9477: add forgotten substitution when compiling anonymous modules
   (Thomas Refis, review by Frédéric Bour, report by Andreas Hauptmann)
+
+- #9384, #9385: Fix copy scope bugs in substitutions
+  (Leo White, review by Thomas Refis, report by Nick Roberts)
 
 * #9388: Prohibit signature local types with constraints
   (Leo White, review by Jacques Garrigue)
